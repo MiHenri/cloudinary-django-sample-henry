@@ -18,7 +18,8 @@ class PhotoDirectForm(PhotoForm):
         options = { 
           'tags': "Henri",
           'crop': 'limit', 'width': 500, 'height': 500},
-          )
+          'eager': [{ 'crop': 'fit', 'width': 500, 'height': 500 }]
+        })
 
 class PhotoUnsignedDirectForm(PhotoForm):
     upload_preset_name = "sample_eaeb23440f"
