@@ -17,7 +17,7 @@ class PhotoDirectForm(PhotoForm):
         attrs = { 'style': "margin-top: 30px" }, 
         options = { 
           'tags': "Henri",
-          'crop': 'limit', 'width': 500, 'height': 500},
+          'crop': 'limit', 'width': 500, 'height': 500,
           'eager': [{ 'crop': 'fit', 'width': 500, 'height': 500 }]
         })
 
